@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#define ruby version for rvm
+#ruby=2.2.3
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -9,6 +11,7 @@ gem 'pg'
 
 # Devise
 gem 'devise'
+gem 'omniauth-facebook'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
