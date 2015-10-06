@@ -26,6 +26,7 @@
 #  updated_at             :datetime         not null
 #  provider               :string
 #  uid                    :string
+#  image_url              :string
 #
 
 require 'test_helper'
