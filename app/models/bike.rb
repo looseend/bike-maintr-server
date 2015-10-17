@@ -16,5 +16,7 @@ class Bike < ActiveRecord::Base
 
   has_many :bike_assets
   has_many :assets, through: :bike_assets
+
+  accepts_nested_attributes_for :assets
   
 end

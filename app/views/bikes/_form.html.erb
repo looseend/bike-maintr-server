@@ -1,0 +1,13 @@
+<%= simple_form_for [current_user, @bike] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :frame_number %>
+    <% @bike.assets.each do |asset| %>
+        <%= image_tag asset.asset_image.url(:thumb) %>
+    <% end  %>
+
+
+    <%= link_to 'Add a picture', new_user_bike_asset_path(current_user, @bike)  unless @bike.id.nil? %>
+    <br />
+    <%= f.button :submit %>
+<% end %>
