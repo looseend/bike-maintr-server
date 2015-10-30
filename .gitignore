@@ -32,6 +32,7 @@ profile
 
 doc/*
 spec/reports
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
