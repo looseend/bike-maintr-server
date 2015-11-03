@@ -1,9 +1,6 @@
-<h2>Bikes for <%= current_user.name %></h2>
+<div class="row">
+  <%= link_to "Add bike", new_user_bike_path(current_user), class: 'right button' %>
+  <h2>Bikes</h2>
+</div>
 
-<table>
-<tr>
-<th>Bike</th>
-<th><%= link_to "Add bike", new_user_bike_path(current_user) %>
-</tr>
 <%= render current_user.bikes %>
-</table>

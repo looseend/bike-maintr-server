@@ -5,13 +5,19 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    
-    <%= yield %>
-    
-    <div class="footer">
-      <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+
+    <div class="row">
+      <%= yield %>
     </div>
+
+    <footer>
+      <div class="panel clearfix">
+        <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'right' if current_user %>
+      </div>
+    </footer>
   </body>
 </html>

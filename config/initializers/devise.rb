@@ -262,6 +262,6 @@ Devise.setup do |config|
 
   config.omniauth :facebook, "135720346782370", "7761e9bf4043792183a52631db7ee3fb", scope: 'public_profile,email', info_fields: 'email,name' if Rails.env == 'production'
   
-  config.omniauth :facebook, "147003678987370", "2a24260fd414137e8dcfc145ac9e39f5", scope: 'public_profile,email', info_fields: 'email,name' if Rails.env == 'development'
+  config.omniauth :facebook, "155053654849039", "6cad8fcce88331caea18b4ae733b5005", scope: 'public_profile,email', info_fields: 'email,name' if Rails.env == 'development'
 
 end

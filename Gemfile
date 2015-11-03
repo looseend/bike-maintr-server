@@ -40,6 +40,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 gem 'simple_form'
+gem 'foundation-rails'
+gem 'foundation-icons-sass-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
